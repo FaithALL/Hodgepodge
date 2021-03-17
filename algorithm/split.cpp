@@ -9,7 +9,7 @@ using namespace std;
  * @param delimiters 分隔符
  * @param tokens 分隔后存放位置
  */
-void split(string_view str, string_view delimiters, vector<string_view>& tokens) {
+void split(string_view str, vector<string_view>& tokens, string_view delimiters = " ") {
     string_view::size_type lastPos = str.find_first_not_of(delimiters, 0);
     string_view::size_type pos = str.find_first_of(delimiters, lastPos);
     while (pos != string_view::npos || lastPos != string_view::npos) {
@@ -21,6 +21,6 @@ void split(string_view str, string_view delimiters, vector<string_view>& tokens)
 
 int main() {
     vector<string_view> tokens;
-    split(" i love you! ", " ", tokens);
+    split(" i love you! ", tokens);
     for (auto x : tokens) cout << "**"<< x << "**" << endl;
 }
