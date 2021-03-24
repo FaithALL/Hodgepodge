@@ -1,8 +1,8 @@
 # Hodgepodge
 
-> 这不是一个单独明确的项目，而是各种小东西的大杂烩。全部通过C++编写，意图练习最新可用的C++标准，目前采用C++17
+* [algorithm](algorithm/)：实现一些算法
+  * [cpy.c](algorithm/cpy.c)：c语言中的`memcpy`和`strcpy`
+  * [sort.c](algorithm/sort.cpp)：冒泡、选择、插入、归并、堆排、快排
+  * [split](algorithm/split.cpp)：字符串分割
+  * [cache_replacement](algorithm/cache_replacement.cpp)：缓存淘汰算法`LRU`、`LFU`
 
-## 已有模块
-
-* Tetris：俄罗斯方块
-* JSON：JSON库
