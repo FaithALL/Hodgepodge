@@ -7,6 +7,7 @@
 #include <random>
 #include <memory>
 #include <SDL2/SDL.h>
+#include <algorithm>
 
 template <int, int> class lifeGame;
 
@@ -61,14 +62,16 @@ template<int WIDTH, int HEIGHT>
 class lifeGame {
 public:
     lifeGame() {
-        //初始随机化
+        //随机种子
         std::random_device rd;
-        std::mt19937 gen(rd());
+        //随机数生成器
+        std::default_random_engine gen(rd());
+        //随机数分布模型
         std::uniform_int_distribution<> dis(0, 1);
         for (auto &arr : matrix) {
-            for (auto &x : arr) {
-                x = dis(gen);
-            }
+            std::generate(arr.begin(), arr.end(), [&gen, &dis] {
+                return dis(gen);
+            });
         }
     }
 
