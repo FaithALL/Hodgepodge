@@ -44,7 +44,7 @@ public:
 
     //ptr->mem
     //如果ptr是内置指针,等价于(*ptr).mem
-    //如果ptr是类对象,等价于ptr.operator()->mem
+    //如果ptr是类对象,等价于(ptr.operator->())->mem
     T *operator->() const {
         return mPtr;
         //相当于return &this->operator*();
