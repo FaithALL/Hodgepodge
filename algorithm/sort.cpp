@@ -5,7 +5,7 @@
 using namespace std;
 
 //堆排序：堆调整
-void adujust_heap(int arr[], int start, int end) {
+void adjust_heap(int arr[], int start, int end) {
     int dad = start;
     int son = 2 * dad + 1;
 
@@ -23,11 +23,11 @@ void adujust_heap(int arr[], int start, int end) {
 //堆排序
 void heap_sort(int arr[], int len) {
     for (int i = len / 2 - 1; i >= 0; --i) {
-        adujust_heap(arr, i, len - 1);
+        adjust_heap(arr, i, len - 1);
     }
     for (int i = len - 1; i > 0; --i) {
         swap(arr[0], arr[i]);
-        adujust_heap(arr, 0, i - 1);
+        adjust_heap(arr, 0, i - 1);
     }
 }
 
