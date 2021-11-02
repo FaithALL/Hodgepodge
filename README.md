@@ -16,8 +16,9 @@
 
   * [lifeGame](toy/lifeGame/)：[生命游戏](https://baike.baidu.com/item/%E5%BA%B7%E5%A8%81%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F/22668799?fromtitle=%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F&fromid=2926434&fr=aladdin)，依赖SDL2
 
-    <img src="pic/lifeGame.gif" style="zoom: 67%;" />
+    <div align=center><img width="520" height="520" src="pic/lifeGame.gif"/></div>
     
-  * AmazingBrick
+  * AmazingBrick：依赖pygame、pygame_colliders
 
-    <img src="pic/AmazingBrick.gif" alt="AmazingBrick" style="zoom:67%;" />
+    <div align=center><img width="289" height="520" src="pic/AmazingBrick.gif"/></div>
+
