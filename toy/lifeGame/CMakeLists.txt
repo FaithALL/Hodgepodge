@@ -3,5 +3,7 @@ project(lifeGame)
 
 set(CMAKE_CXX_STANDARD 17)
 
+find_package(SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
 add_executable(lifeGame main.cpp Game.hpp)
-target_link_libraries(lifeGame -lSDL2)
+target_link_libraries(lifeGame ${SDL2_LIBRARIES})
