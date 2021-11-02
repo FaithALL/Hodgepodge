@@ -17,4 +17,7 @@
   * [lifeGame](toy/lifeGame/)：[生命游戏](https://baike.baidu.com/item/%E5%BA%B7%E5%A8%81%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F/22668799?fromtitle=%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F&fromid=2926434&fr=aladdin)，依赖SDL2
 
     <img src="pic/lifeGame.gif" style="zoom: 67%;" />
+    
+  * AmazingBrick
 
+    <img src="pic/AmazingBrick.gif" alt="AmazingBrick" style="zoom:67%;" />
